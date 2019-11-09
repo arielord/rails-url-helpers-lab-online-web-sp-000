@@ -2,7 +2,7 @@ class Student < ActiveRecord::Base
   after_initialize :defaults
   
   def defaults
-    self.active = false
+    self.active ||= false
   end
   
   def to_s
