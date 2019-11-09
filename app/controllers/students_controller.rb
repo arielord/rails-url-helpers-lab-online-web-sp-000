@@ -9,7 +9,7 @@ class StudentsController < ApplicationController
   end
   
   def activate
-    @students[params[:id]].active = !@students[params[:id]].active
+    @student.active = !@student.active
   end
 
   private
